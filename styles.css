@@ -1,0 +1,910 @@
+/* GLOBAL CSS */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* GLOBAL CSS ENDS */
+
+/*  GENERAL CSS THAT APPLIES TO ALL DEVICES WIDTH*/
+
+/* NAVIGATION */
+
+.tabs {
+  transition: 0.2s 0.2s ease-in;
+}
+.tabs:hover {
+  color: rgb(240, 176, 38);
+}
+
+/* HEADER SECTION */
+
+/* HERO SECTION */
+
+header {
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(6, 9, 26, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.herotitle-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+
+  place-items: center;
+  margin-top: 10rem;
+}
+
+.hero-title {
+  color: white;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+}
+
+/* HERO ENDS */
+
+/* FIXED NAV */
+
+.fix-nav {
+  position: fixed !important;
+
+  z-index: 100 !important;
+  background: rgba(0, 0, 0, 1) !important;
+  width: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  border: none !important;
+}
+
+/* FIXED NAV ENDS */
+
+.buttons-container {
+  display: flex;
+
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* HERO BUTTONS */
+
+.hero-link-1 {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(240, 176, 38);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+
+  padding: 0.65rem 0.75rem;
+
+  display: inline-block;
+
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 9rem;
+  height: 2.5rem;
+  transition: 0.2s 0.2s ease-in;
+}
+
+.hero-link-1:hover {
+  background-color: rgb(255, 205, 96);
+}
+
+.hero-link-2 {
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: white;
+
+  padding: 0.59rem 0.75rem;
+
+  display: inline-block;
+
+  font-size: 0.9rem;
+  border: 0.13rem solid rgb(240, 176, 38);
+  border-radius: 1.25rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 9rem;
+  height: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.2s 0.2s ease-in;
+}
+
+.hero-link-2:hover {
+  background: rgb(240, 176, 38);
+}
+
+/* HERO BUTTONS ENDS */
+
+/* HERO SCROLL DOWN BUTTON */
+
+.arrow-container {
+  margin-top: 8rem;
+
+  text-align: center;
+}
+
+.arrow {
+  color: white;
+  font-size: 1.7rem;
+  animation: arrow 2s ease-in-out infinite;
+  transition: 0.2s 0.2s ease-in;
+}
+
+.arrow:hover {
+  color: rgb(240, 176, 38);
+  font-size: 1.5rem;
+  animation: arrow 2s ease-in-out infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* HERO SCROLL DOWN BUTTON */
+
+@keyframes scroll {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+/* HEADER ENDS */
+
+/* HERO SCROLL DOWN BUTTON ENDS */
+
+/* SERVICES SECTION */
+
+.services-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  min-height: 20vh;
+  margin: 2rem;
+}
+
+.services-container {
+  display: flex;
+}
+
+.services-icon {
+  font-size: 2.3rem;
+  color: rgb(240, 176, 38);
+  margin-right: 1.5rem;
+}
+
+.services-info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: rgb(143, 148, 172);
+}
+
+.services-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+/* SERVICES SECTION ENDS */
+
+/* ABOUT US SECTION */
+
+.aboutus-bar {
+  background-image: linear-gradient(rgba(6, 9, 26, 0.8), rgba(0, 0, 0, 0.9)),
+    url(./images/blue-and-yellow-phone-modules-1476321.jpg);
+
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+}
+
+.aboutus {
+  color: white;
+  width: 60%;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3rem;
+
+  font-size: 1.1rem;
+
+  font-weight: 100;
+}
+
+/* ABOUT US SECTION ENDS */
+
+/* LAPTOP IMAGE STARTS */
+
+.laptop-container-2 {
+  width: 100%;
+  height: 22vh;
+  display: grid;
+  place-items: center;
+}
+.laptop-container {
+  position: relative;
+  width: 50vh;
+  height: 22vh;
+
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.laptop-img {
+  height: 30vh;
+  right: -4;
+  top: -90;
+
+  position: absolute;
+  animation: laptop 1.5s ease-in-out infinite;
+}
+
+@media screen and (max-width: 381px) {
+  .laptop-img {
+    right: 7;
+  }
+}
+
+@keyframes laptop {
+  0% {
+    transform: translateY(1rem);
+  }
+  50% {
+    transform: translateY(1.5rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+/* LAPTOP IMAGE ENDS */
+
+.contact-section {
+  min-height: 50vh;
+}
+
+.contact-section {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.contract-form,
+.contact-info {
+  margin: 1rem 0;
+}
+
+.contact-item {
+  margin-bottom: 1.75rem;
+}
+
+.contact-icon {
+  color: rgb(240, 176, 38);
+}
+
+.contact-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.contact-text {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: rgb(131, 135, 153);
+  margin-top: 1rem;
+}
+
+.contact-form {
+  text-align: center;
+  width: 100%;
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid rgb(240, 176, 38);
+  margin-bottom: 1.25rem;
+  background: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.form-control::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(131, 135, 153);
+  text-transform: uppercase;
+}
+
+.submit-btn {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 0.2rem;
+  background: rgb(240, 176, 38);
+  border: transparent;
+  height: 2rem;
+  margin-top: -1rem;
+}
+
+.footer-section {
+  min-height: 20vh;
+  background-color: rgba(6, 9, 26, 0.9);
+  display: grid;
+  place-items: center;
+}
+
+.icons {
+  color: rgb(240, 176, 38);
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.footer-info {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.developed {
+  color: rgb(240, 176, 38);
+}
+
+/* SCROLL UP BUTTON SECTION */
+
+.scroll-container {
+  height: 3rem;
+  border: 0.2rem solid rgb(240, 176, 38);
+
+  min-width: 4%;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 100;
+  right: 40;
+  display: grid;
+  place-items: center;
+  background-color: rgba(6, 9, 26, 0.9);
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+.scroll-up {
+  color: rgb(240, 176, 38);
+
+  font-size: 3.5rem;
+  animation: scroll 3s ease-in-out infinite;
+}
+
+/* SCROLL UP BUTTON SECTION */
+
+/* RANDOM MOBILE RESPONSE FIXTUES */
+
+@media screen and (max-width: 433px) {
+  .custom-section {
+    min-height: 130vh;
+  }
+
+  .aboutus {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+}
+/* RANDOM MOBILE RESPONSE FIXTUES ENDS */
+
+/* GENERAL CSS FOR ALL DEVICES ENDS */
+
+/* CSS FOR DEVICES UP TILL 899PX */
+
+@media screen and (max-width: 899px) {
+  /* MAIN NAVIGATION AND LOGO 899PX & UNDER STARTS */
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+
+    border-bottom: 0.2px solid rgb(100, 99, 99);
+    height: 7rem;
+  }
+
+  .logo {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+
+    text-decoration: none;
+  }
+
+  .tabs-container {
+    display: none;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .bars-container {
+    display: flex;
+
+    justify-self: right;
+    margin-right: 4rem;
+  }
+
+  .nav-bar {
+    color: white;
+    font-size: 1.8rem;
+    transition: 0.2s 0.2s ease-in;
+  }
+
+  .nav-bar:hover {
+    color: rgb(240, 176, 38);
+  }
+
+  /* NAVIGATION AND LOGO 899PX & UNDER ENDS*/
+  /* MOBILE NAV FOR 899 PX & UNDER STARTS */
+
+  .mobiletabs-section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(6, 9, 26, 0.9);
+    z-index: -10000;
+    visibility: hidden;
+  }
+
+  .show-navigation {
+    z-index: 10000;
+    visibility: visible;
+  }
+
+  .mobiletabs-container {
+    list-style: none;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    height: 50%;
+  }
+
+  .exit {
+    color: rgb(240, 176, 38);
+    position: absolute;
+    top: 20;
+    right: 30;
+    font-size: 2rem;
+    transition: 0.2s 0.2s ease-in;
+  }
+
+  .exit:hover {
+    color: rgb(255, 218, 116);
+  }
+
+  .mobile-tabs {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    transition: 0.2s 0.2s ease-in;
+  }
+
+  .mobile-tabs:hover {
+    color: rgb(240, 176, 38);
+  }
+
+  /* MOBILE NAV FOR 899 PX & UNDER ENDS */
+
+  /* HERO BUTTONS FOR 899PX & UNDER STARTS */
+
+  .buttons-container {
+    margin-top: 4rem;
+    text-align: center;
+    display: grid;
+  }
+
+  .hero-link-1 {
+    margin-bottom: 1.5rem;
+    width: 15rem;
+  }
+
+  .hero-link-2 {
+    width: 15rem;
+  }
+
+  /* HERO BUTTONS FOR 899PX & UNDER ENDS */
+
+  /* PROCESS SECTION FOR 899PX & UNDER STARTS */
+  .custom-section {
+    max-height: 110vh;
+    background-color: rgb(238, 240, 245);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .custominfo-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    height: 100%;
+
+    margin: 0 3rem;
+  }
+
+  .custom-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    min-width: 100%;
+    margin: 2rem auto;
+  }
+
+  .custom-paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: rgb(131, 135, 153);
+
+    margin-bottom: 2rem;
+    max-width: 70%;
+  }
+
+  .custom-paragraph-2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: rgb(131, 135, 153);
+    width: 100%;
+    border-bottom: 0.1px dashed rgb(190, 194, 207);
+  }
+
+  .custom-title-2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  .custom-icon {
+    font-size: 1.8rem;
+    font-size: 2.3rem;
+    color: rgb(240, 176, 38);
+    margin-bottom: 1rem;
+  }
+
+  .custom-info {
+    margin-bottom: 2rem;
+  }
+
+  /* PROCESS SECTION FOR 899PX & UNDER ENDS */
+
+  /* REPAIR IMAGE FOR 899PX & UNDER STARTS */
+
+  .repair-img {
+    display: none;
+  }
+
+  .repairing-container {
+    display: none;
+  }
+
+  /* REPAIR IMAGE FOR 899PX & UNDER ENDS*/
+
+  /* CONTACT SECTION FOR 899PX & UNDER STARTS */
+
+  .contact-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  /* CONTACT SECTION FOR 899PX & UNDER ENDS */
+
+  /* FOOTER FOR 899 PX & UNDER STARTS */
+
+  .footer-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    width: 90%;
+    place-items: center;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  /* FOOTER FOR 899 PX & UNDER ENDS */
+}
+
+/* CSS FOR DEVICES UP TILL 899PX ENDS */
+
+/* CSS FOR DEVICES OVER 900PX WIDTH STARTS */
+
+@media screen and (min-width: 900px) {
+  /* NAVIGATION CSS FOR 900PX & UP */
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    border-bottom: 0.2px solid rgb(100, 99, 99);
+    height: 7rem;
+  }
+
+  .bars-container {
+    display: none;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .logo {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+  }
+
+  .tabs-container {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .tabs {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 1rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 0.25rem;
+  }
+
+  .shape {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  /* NAVIGATION CSS FOR 900PX & UP ENDS */
+
+  /* MOBILE NAV SECTION- 900PX & UP STARTS */
+
+  .mobiletabs-section {
+    display: none;
+  }
+
+  .mobiletabs-section {
+    display: none;
+  }
+  /* MOBILE NAV SECTION- 900PX & UP ENDS*/
+
+  /* HERO TITLE 900PX & UP STARTS*/
+  .hero-title {
+    color: white;
+    font-size: 4rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+  }
+
+  /* HERO SECTION TITLE 900PX & UP ENDS */
+
+  /* SERVICES SECTION 900PX & UP STARTS*/
+
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    min-height: 40vh;
+  }
+
+  .services-container {
+    display: flex;
+  }
+
+  .services-icon {
+    font-size: 2.3rem;
+    color: rgb(240, 176, 38);
+    margin-right: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-info {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    color: rgb(143, 148, 172);
+    min-height: 2rem;
+    max-width: 1800px;
+  }
+
+  .services-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    max-width: 1800px;
+  }
+  /* SERVICES SECTION - MIN 900 PX & UP ENDS */
+
+  /* PROCESS SECTION - MIN 900 PX & UP STARTS */
+
+  .custom-section {
+    min-height: 50h;
+    background-color: rgb(238, 240, 245);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custominfo-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 2rem;
+  }
+
+  .custom-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin-top: 8rem;
+    margin-left: 7rem;
+  }
+
+  .custom-paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: rgb(131, 135, 153);
+
+    margin-bottom: 2rem;
+    max-width: 60%;
+    margin-left: 7rem;
+  }
+
+  .custom-paragraph-2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: rgb(131, 135, 153);
+    max-width: 60%;
+    border-bottom: 0.1px dashed rgb(190, 194, 207);
+    margin-left: 7rem;
+  }
+
+  .custom-title-2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-left: 7rem;
+  }
+
+  .custom-icon {
+    font-size: 1.8rem;
+    font-size: 2.3rem;
+    color: rgb(240, 176, 38);
+    margin-bottom: 1rem;
+    margin-left: 7rem;
+  }
+
+  .custom-info {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  /* PROCESS SECTION - 900PX & UP ENDS */
+
+  /* REPAIR IMAGE SECTION- 900PX & UP STARTS */
+
+  .repair-img {
+    position: absolute;
+    bottom: 0;
+
+    height: 65%;
+    width: 100%;
+  }
+
+  .repairing-container {
+    height: 100%;
+    width: 110%;
+
+    position: relative;
+  }
+
+  /* REPAIR IMAGE SECTION- 900PX & UP ENDS */
+
+  /* CONTACT SECTION- 900PX & UP STARTS */
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 9rem;
+  }
+
+  /* CONTACT SECTION- 900PX & UP ENDS */
+
+  /* FOOTER SECTION- 900PX & UP STARTS */
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 90%;
+    place-items: center;
+  }
+
+  /* FOOTER SECTION- 900PX & UP ENDS */
+}
+
+/* CSS FOR DEVICES 900PX & UP WIDTH ENDS */
