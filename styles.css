@@ -9,7 +9,7 @@
 html,
 body {
   overflow-x: hidden;
-  scroll-behavior: smoot;
+  scroll-behavior: smooth;
 }
 
 /* GLOBAL CSS ENDS */
